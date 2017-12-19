@@ -8,8 +8,7 @@ class Triangle
     self.c = c
   end
 
-  class TriangleError < StandardError
-  end
+
 
   def kind
     if self.a <= 0 || self.b <= 0 || self.c <= 0 || self.a + self.b < self.c || self.a + self.c < self.b || self.b + self.c < self.a
@@ -22,4 +21,7 @@ class Triangle
       :scalene
     end
   end
+end
+
+class TriangleError < StandardError
 end
